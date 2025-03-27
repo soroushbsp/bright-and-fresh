@@ -41,6 +41,9 @@
                 height="200"
                 style="border-radius: 50%"
               />
+              <span style="margin: 2px 3px 0px; font-size: 16px; font-weight: 700; color: #009688 !important;">
+                Bright and Fresh
+              </span>
             </nuxt-link>
           </div>
           <div v-if="isDesktop" class="main-menu">
@@ -73,6 +76,7 @@
             <v-btn color="primary">
               Register
             </v-btn> -->
+
             <v-spacer v-if="isDesktop" class="vertical-divider" />
             <v-btn
               icon="mdi-whatsapp"

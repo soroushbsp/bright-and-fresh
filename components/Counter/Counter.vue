@@ -8,8 +8,8 @@
     <v-row align="center" justify="center" class="root">
       <v-col sm="4">
         <div class="counter-item">
-          <span class="icon ion-ios-globe" />
-
+          <!-- <span class="icon ion-ios-globe" /> -->
+          <v-icon class="icon"> mdi-check </v-icon>
           <div class="text">
             <h3 class="text-h3">
               {{ !visible ? 0 : "" }}
@@ -28,7 +28,8 @@
       </v-col>
       <v-col sm="4">
         <div class="counter-item">
-          <span class="icon ion-ios-bulb-outline" />
+          <!-- <span class="icon ion-ios-bulb-outline" /> -->
+          <v-icon class="icon"> mdi-account-multiple </v-icon>
           <div class="text">
             <h3 class="text-h3">
               {{ !visible ? 0 : "" }}
@@ -45,7 +46,8 @@
       </v-col>
       <v-col sm="4">
         <div class="counter-item">
-          <span class="icon ion-ios-leaf-outline" />
+          <!-- <span class="icon ion-ios-leaf-outline" /> -->
+          <v-icon class="icon"> mdi-leaf </v-icon>
           <div class="text">
             <div class="text-h3">
               {{ !visible ? 0 : "" }}

@@ -114,6 +114,12 @@ export default defineNuxtComponent({
       if (storedLang.value && rootUrl) {
         router.push({ path: `/${storedLang.value}` });
       }
+      window.addEventListener("load", () => {
+        if (!("serviceWorker" in navigator)) {
+          throw new Error("serviceWorker is not supported in current browser!");
+        }
+        navigator.serviceWorker.register("/sw.js");
+      });
     });
   },
 });

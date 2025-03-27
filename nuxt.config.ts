@@ -80,7 +80,7 @@ export default defineNuxtConfig({
           sizes: "16x16",
           href: "/logo-light.png",
         },
-        { rel: "manifest", href: "/favicons/manifest.json" },
+        { rel: "manifest", href: "/manifest.json" },
         // Fonts and Icons
         {
           rel: "stylesheet",
@@ -124,7 +124,7 @@ export default defineNuxtConfig({
       name: "Bright and Fresh Cleaning Services",
       short_name: "Bright&Fresh",
       description: "Professional cleaning services for homes and offices",
-      theme_color: "#4CAF50",
+      theme_color: "#009688",
       background_color: "#FFFFFF",
       display: "standalone",
       start_url: "/",

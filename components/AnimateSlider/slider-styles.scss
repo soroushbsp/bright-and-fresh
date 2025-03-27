@@ -30,9 +30,9 @@
       line-height: 1.5;
       margin: 20px auto 30px;
       max-width: 640px;
-      @include breakpoints-down(xs) {
-        display: none
-      }
+      // @include breakpoints-down(xs) {
+      //   display: none
+      // }
     }
   }
   section {
