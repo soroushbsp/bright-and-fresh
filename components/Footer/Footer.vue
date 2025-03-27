@@ -1,157 +1,100 @@
 <template>
-  <footer class="footer">
+  <v-footer color="primary" class="mt-10">
     <v-container>
       <v-row>
-        <v-col
-          class="pa-4 px-lg-10"
-          md="3"
-          cols="12"
-        >
-          <logo type="portrait" />
-          <p
-            v-if="isDesktop"
-            class="body-2 text-center"
-          >
-            &copy;&nbsp;
-            {{ brand.starter.footerText }}
+        <!-- Info Column -->
+        <v-col cols="12" md="6" class="text-white">
+          <h3 class="text-h5 font-weight-bold mb-4">Bright and Fresh</h3>
+          <p class="mb-2">
+            <v-icon icon="mdi-email" class="mr-2"></v-icon>
+            info@brightandfresh.nl
           </p>
-        </v-col>
-        <v-col
-          class="pa-4"
-          md="6"
-          cols="12"
-        >
-          <v-expansion-panels v-if="isMobile">
-            <v-expansion-panel
-              v-for="(footer, index) in footers"
-              :key="index"
-              class="accordion-content"
-            >
-              <v-expansion-panel-title>
-                <h6 class="text-h5 mb-4 text-capitalize">
-                  {{ $t('common.footer_'+footer.title) }}
-                </h6>
-              </v-expansion-panel-title>
-              <v-expansion-panel-text>
-                <ul>
-                  <li
-                    v-for="(item, indexDesc) in footer.description"
-                    :key="indexDesc"
-                  >
-                    <router-link :to="footer.link[indexDesc]">
-                      {{ item }}
-                    </router-link>
-                  </li>
-                </ul>
-              </v-expansion-panel-text>
-            </v-expansion-panel>
-          </v-expansion-panels>
-          <v-row
-            v-if="isDesktop"
-            justify="space-around"
-          >
-            <v-col
-              v-for="(footer, index) in footers"
-              :key="index"
-              class="pa-4 site-map-item"
-            >
-              <h6 class="text-h6 mb-4">
-                {{ $t('common.footer_'+footer.title) }}
-              </h6>
-              <ul>
-                <li
-                  v-for="(item, indexDesc) in footer.description"
-                  :key="indexDesc"
-                >
-                  <router-link :to="footer.link[indexDesc]">
-                    {{ item }}
-                  </router-link>
-                </li>
-              </ul>
-            </v-col>
-          </v-row>
-        </v-col>
-        <v-col
-          md="3"
-          cols="12"
-          class="pa-4"
-        >
-          <div class="socmed">
+          <p class="mb-2">
+            <v-icon icon="mdi-phone" class="mr-2"></v-icon>
+            +31 6 1234 5678
+          </p>
+          <p class="mb-4">
+            <v-icon icon="mdi-clock" class="mr-2"></v-icon>
+            Ma-Vr: 8:00 - 18:00
+          </p>
+
+          <div class="social-icons">
             <v-btn
-              text
               icon="mdi-facebook"
-              class="button"
-              size="x-small"
-              variant="outlined"
-              color="indigo"
-            />
+              variant="text"
+              color="white"
+              href="https://facebook.com/brightandfresh"
+              target="_blank"
+            ></v-btn>
             <v-btn
-              text
-              icon="mdi-twitter"
-              class="button"
-              size="x-small"
-              variant="outlined"
-              color="blue"
-            />
-            <v-btn
-              text
               icon="mdi-instagram"
-              class="button"
-              size="x-small"
-              variant="outlined"
-              color="purple"
-            />
+              variant="text"
+              color="white"
+              href="https://instagram.com/brightandfresh"
+              target="_blank"
+            ></v-btn>
             <v-btn
-              text
-              icon="mdi-linkedin"
-              class="button"
-              size="x-small"
-              variant="outlined"
-              color="blue"
-            />
+              icon="mdi-whatsapp"
+              variant="text"
+              color="white"
+              href="https://wa.me/31612345678"
+              target="_blank"
+            ></v-btn>
           </div>
-          <v-select
-            v-model="lang"
-            :items="langList"
-            :value="curLang"
-            label=""
-            outlined
-            class="select-lang"
-            @update:model-value="switchLang(lang)"
-          />
-          <p
-            v-if="isMobile"
-            class="body-2 text-center"
-          >
-            &copy;&nbsp;
-            {{ brand.starter.footerText }}
-          </p>
+        </v-col>
+
+        <!-- Map Location Column -->
+        <v-col cols="12" md="6">
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2436.476961783372!2d4.894502315801661!3d52.37021597978625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTLCsDIyJzEyLjgiTiA0wrA1My'0OC4xIkU!5e0!3m2!1sen!2snl!4v1620000000000!5m2!1sen!2snl"
+              width="100%"
+              height="250"
+              style="border: 0"
+              allowfullscreen
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              aria-label="Onze locatie in Amsterdam"
+            ></iframe>
+
+            <div class="mt-4 text-white">
+              <v-icon icon="mdi-map-marker" class="mr-2"></v-icon>
+              <span>Keizersgracht 123, 1015 CJ Amsterdam</span>
+            </div>
+          </div>
         </v-col>
       </v-row>
+
+      <!-- Copyright -->
+      <v-divider class="my-4" color="white"></v-divider>
+      <div class="text-center text-white">
+        &copy; {{ new Date().getFullYear() }}
+        {{ brand.starter.footerText }}
+      </div>
     </v-container>
-  </footer>
+  </v-footer>
 </template>
 
 <style scoped lang="scss">
-@import './footer';
+@import "./footer";
 </style>
 
 <script>
-import { ref } from 'vue';
-import { useI18n } from 'vue-i18n';
-import { useSwitchLocalePath } from 'vue-i18n-routing';
-import { setRtl } from '@/composables/uiTheme';
-import brand from '@/assets/text/brand';
-import { navigateTo } from '#app';
-import Logo from '../Logo';
+import { ref } from "vue";
+import { useI18n } from "vue-i18n";
+import { useSwitchLocalePath } from "vue-i18n-routing";
+import { setRtl } from "@/composables/uiTheme";
+import brand from "@/assets/text/brand";
+import { navigateTo } from "#app";
+import Logo from "../Logo";
 
 export default {
   components: {
     Logo,
   },
   setup() {
-    const switchLocalePath = useSwitchLocalePath()
-  
+    const switchLocalePath = useSwitchLocalePath();
+
     const i18n = useI18n();
     const curLang = i18n.locale.value;
     const lang = ref(curLang);
@@ -161,14 +104,14 @@ export default {
       //i18n.setLocale(locale);
       console.log(switchLocalePath(locale));
       // Set RTL and Document attr
-      document.documentElement.setAttribute('lang', locale);
+      document.documentElement.setAttribute("lang", locale);
 
-      if (locale === 'ar') {
+      if (locale === "ar") {
         setRtl(true);
-        document.documentElement.setAttribute('dir', 'rtl');
+        document.documentElement.setAttribute("dir", "rtl");
       } else {
         setRtl(false);
-        document.documentElement.setAttribute('dir', 'ltr');
+        document.documentElement.setAttribute("dir", "ltr");
       }
     }
 
@@ -183,24 +126,24 @@ export default {
       brand,
       footers: [
         {
-          title: 'company',
-          description: ['Team', 'History', 'Contact us', 'Locations'],
-          link: ['#', '#', '#', '#'],
+          title: "company",
+          description: ["Team", "History", "Contact us", "Locations"],
+          link: ["#", "#", "#", "#"],
         },
         {
-          title: 'resources',
+          title: "resources",
           description: [
-            'Resource',
-            'Resource name',
-            'Another resource',
-            'Final resource',
+            "Resource",
+            "Resource name",
+            "Another resource",
+            "Final resource",
           ],
-          link: ['#', '#', '#', '#'],
+          link: ["#", "#", "#", "#"],
         },
         {
-          title: 'legal',
-          description: ['Privacy policy', 'Terms of use'],
-          link: ['#', '#'],
+          title: "legal",
+          description: ["Privacy policy", "Terms of use"],
+          link: ["#", "#"],
         },
       ],
     };
@@ -211,7 +154,10 @@ export default {
       const i18n = this.$i18n.locales;
 
       i18n.map((locale) => {
-        list.push({ title: this.$t('common.' + locale.code), value: locale.code });
+        list.push({
+          title: this.$t("common." + locale.code),
+          value: locale.code,
+        });
         return false;
       });
       return list;

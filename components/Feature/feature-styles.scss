@@ -83,6 +83,9 @@
 .deco1 {
   @include decoration;
   transform: translateY(-20px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .deco2 {
@@ -90,7 +93,10 @@
   width: 450px;
   height: 450px;
   transform: translateY(-40px);
-  @include left(calc(50% - 350px))
+  @include left(calc(50% - 350px));
+  display: flex;
+  justify-content: center;
+  padding-top: 80px;
 }
 
 .parallax-wrap {

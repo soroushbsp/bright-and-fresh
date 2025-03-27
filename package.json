@@ -1,7 +1,7 @@
 {
-  "name": "stater-project",
+  "name": "bright and fresh",
   "version": "3.0.0",
-  "description": "Veluxi Vue3 Starter Project",
+  "description": "bright and fresh",
   "keywords": [
     "starter kit",
     "empty project",
@@ -9,7 +9,7 @@
     "kick start",
     "boilerplate"
   ],
-  "author": "Luxi Theme",
+  "author": "soroush basirat pour",
   "license": "Envato",
   "private": true,
   "scripts": {
@@ -21,7 +21,9 @@
   },
   "dependencies": {
     "@mdi/font": "^7.0.96",
+    "@nuxtjs/sitemap": "^7.2.9",
     "@splidejs/vue-splide": "^0.6.12",
+    "@vite-pwa/nuxt": "^0.10.6",
     "rtl-sass": "^1.5.0",
     "vite-plugin-vuetify": "^1.0.2",
     "vue-countup-v3": "^1.1.0",

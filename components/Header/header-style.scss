@@ -101,8 +101,8 @@ $flag: '/images/flag-logo.png';
         @include palette-text-primary
       }
       img {
-        height: 32px;
-        width: 32px
+        height: 80px;
+        width: 80px
       }
     }
     .bar {
@@ -174,9 +174,9 @@ $flag: '/images/flag-logo.png';
   }
   img {
     transition: all 0.3s ease;
-    max-width: 48px;
-    height: 48px;
-    width: 48px;
+    max-width: 80px;
+    height: 80px;
+    width: 80px;
     @include margin-right($spacing1);
   }
 }

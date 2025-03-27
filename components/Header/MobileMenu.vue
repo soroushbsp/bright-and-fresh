@@ -10,13 +10,13 @@
         >
           <div>
             <v-list-item-title class="menu-list">
-              {{ $t('starter.header_'+item) }}
+              {{ $t("starter.header_" + item) }}
             </v-list-item-title>
           </div>
         </v-list-item>
       </v-list>
       <v-divider />
-      <v-list dense>
+      <!-- <v-list dense>
         <v-list-item
           v-for="(item, index) in ['login', 'register']"
           :key="index"
@@ -29,22 +29,22 @@
             </v-list-item-title>
           </div>
         </v-list-item>
-      </v-list>
+      </v-list> -->
     </div>
   </div>
 </template>
 
 <style scoped lang="scss">
-@import './header-style';
+@import "./header-style";
 </style>
 
 <script>
-import navMenu from './menu';
+import navMenu from "./menu";
 
 export default {
   data() {
     return {
-      dataMenu: navMenu,
+      dataMenu: navMenu.slice(0, 3),
     };
   },
 };

@@ -5,26 +5,23 @@
     :class="{ dark: dark }"
     class="counter-wrap"
   >
-    <v-row
-      align="center"
-      justify="center"
-      class="root"
-    >
+    <v-row align="center" justify="center" class="root">
       <v-col sm="4">
         <div class="counter-item">
-          <span class="icon ion-ios-leaf-outline" />
+          <span class="icon ion-ios-globe" />
+
           <div class="text">
             <h3 class="text-h3">
-              {{ !visible ? 0 : '' }}
+              {{ !visible ? 0 : "" }}
               <count-up
                 v-if="visible"
                 :start-val="0"
-                :end-val="123"
+                :end-val="1250"
                 :options="{ prefix: '+' }"
               />
             </h3>
             <h6 class="use-text-subtitle2">
-              Lorem Ipsum dolor
+              {{ $t("counter.item1") }}
             </h6>
           </div>
         </div>
@@ -34,36 +31,32 @@
           <span class="icon ion-ios-bulb-outline" />
           <div class="text">
             <h3 class="text-h3">
-              {{ !visible ? 0 : '' }}
+              {{ !visible ? 0 : "" }}
+              <count-up
+                v-if="visible"
+                :start-val="0"
+                :end-val="50"
+                :options="{ prefix: '+' }"
+              />
+            </h3>
+            <h6 class="use-text-subtitle2">{{ $t("counter.item2") }}</h6>
+          </div>
+        </div>
+      </v-col>
+      <v-col sm="4">
+        <div class="counter-item">
+          <span class="icon ion-ios-leaf-outline" />
+          <div class="text">
+            <div class="text-h3">
+              {{ !visible ? 0 : "" }}
               <count-up
                 v-if="visible"
                 :start-val="0"
                 :end-val="456"
                 :options="{ prefix: '+' }"
               />
-            </h3>
-            <h6 class="use-text-subtitle2">
-              Pellentesque ac bibendum
-            </h6>
-          </div>
-        </div>
-      </v-col>
-      <v-col sm="4">
-        <div class="counter-item">
-          <span class="icon ion-ios-globe" />
-          <div class="text">
-            <div class="text-h3">
-              {{ !visible ? 0 : '' }}
-              <count-up
-                v-if="visible"
-                :start-val="0"
-                :end-val="789"
-                :options="{ prefix: '$' }"
-              />
             </div>
-            <h6 class="use-text-subtitle2">
-              Consectetur adipiscing
-            </h6>
+            <h6 class="use-text-subtitle2">{{ $t("counter.item3") }}</h6>
           </div>
         </div>
       </v-col>
@@ -72,12 +65,12 @@
 </template>
 
 <style scoped lang="scss">
-@import './counter-style';
+@import "./counter-style";
 </style>
 
 <script>
-import CountUp from 'vue-countup-v3';
-import { ref } from 'vue';
+import CountUp from "vue-countup-v3";
+import { ref } from "vue";
 
 export default {
   components: {
@@ -94,7 +87,8 @@ export default {
     const wrapper = ref(null);
     const offset = 500;
     function runCounter() {
-      const scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+      const scrollPosition =
+        document.documentElement.scrollTop || document.body.scrollTop;
       const topPosition = scrollPosition + offset;
 
       if (topPosition > wrapper.value.offsetTop) {

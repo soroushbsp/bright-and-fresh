@@ -1,7 +1,7 @@
 {
-  common: {
-    title: "A simple example",
-    subtitle: "It's a blank-page. Start to build your'e page from here.",
+  "common": {
+    "title": "A simple example",
+    "subtitle": "It's a blank-page. Start to build your'e page from here.",
     "error_with_status": "An error occurred on server",
     "404": "This page could not be found.",
     "404_subtitle": "You can either stay and chill here, or go back to the beginning.",
@@ -19,11 +19,7 @@
     "form_send": "Send Message",
     "accept": "Accept",
     "en": "English",
-    "de": "Deutsch",
-    "zh": "简体中文",
-    "pt": "󠁥󠁮󠁧󠁿Português",
-    "id": "󠁥󠁮󠁧󠁿Bahasa Indonesia",
-    "ar": "󠁥󠁮󠁧󠁿العربيّة",
+    "nl": "Dutch",
     "notif_msg": "This is an example of a message that is commonly used for important information to visitors or users. Please click the button beside to close this message.",
     "header_language": "language",
     "header_theme": "theme mode",
@@ -61,7 +57,7 @@
     "footer_link": "link",
     "footer_news": "news"
   },
-  starter: {
+  "starter": {
     "header_language": "language",
     "header_theme": "theme mode",
     "header_dark": "dark",
@@ -73,5 +69,93 @@
     "header_subscribe": "subscribe",
     "banner_title": "Welcome to Starter Project",
     "banner_subtitle": "Create your project from scratch with main components and basic styles."
+  },
+  "slides": {
+    "item1_title": "Experience the Ultimate Clean",
+    "item1_desc": "We bring freshness and shine to your home and office with professional, eco-friendly cleaning solutions",
+    "item2_title": "Reliable Cleaning Experts",
+    "item2_desc": "Our trained and insured cleaning professionals ensure high-quality service with attention to detail",
+    "item3_title": "Tailored to Your Needs",
+    "item3_desc": "From deep cleaning to routine maintenance, we offer flexible services that fit your schedule and budget"
+  },
+  "features": {
+    "item1_title": "Eco-Friendly Cleaning",
+    "item1_desc": "Use of non-toxic, biodegradable cleaning products for a safe and healthy environment",
+    "item2_title": "Customizable Services",
+    "item2_desc": "Flexible cleaning plans tailored to your needs",
+    "item3_title": "Professional & Trained Staff",
+    "item3_desc": "Professional, background-checked cleaners ensuring high-quality service",
+    "item4_title": "Affordable Pricing",
+    "item4_desc": "Competitive rates with transparent pricing",
+    "item5_title": "Quick & Efficient Service",
+    "item5_desc": "Fast response and effective cleaning solutions",
+    "item6_title": "High-Quality Equipment",
+    "item6_desc": "Use of advanced tools and technology"
+  },
+  "counter": {
+    "item1": "Satisfied Customers",
+    "item2": "Trained Cleaning Experts",
+    "item3": "Eco-friendly Products"
+  },
+  "prices": {
+    "title": "Pricing and Plan",
+    "item1": {
+      "Service": "Basic Cleaning",
+      "Price": "€25/hour",
+      "Frequency": "One-time/Weekly",
+      "Includes": "Dusting, vacuuming, mopping, bathroom & kitchen cleaning"
+    },
+    "item2": {
+      "Service": "Deep Cleaning",
+      "Price": "€35/hour",
+      "Frequency": "One-time/Monthly",
+      "Includes": "Everything in Basic + oven, fridge, window frames, stain removal"
+    },
+    "item3": {
+      "Service": "Office Cleaning",
+      "Price": "€45/hour",
+      "Frequency": "Weekly/Bi-weekly",
+      "Includes": "Desk disinfection, floors & carpets, waste disposal"
+    },
+    "item4": {
+      "Service": "Eco-Friendly Cleaning",
+      "Price": "€30/hour",
+      "Frequency": "Flexible",
+      "Includes": "Chemical-free, sustainable products, allergy-safe"
+    }
+  },
+  "testimonials": {
+    "title": "Testimonials",
+    "subtitle": "See what our satisfied customers have to say about our cleaning services. We take pride in delivering top-quality, reliable, and eco-friendly cleaning solutions. Your satisfaction is our priority!",
+    "item1": {
+      "Name": "Jan de Vries",
+      "Company": "Homeowner",
+      "Review": "The team did an amazing job! My house has never been this clean. Highly recommend!"
+    },
+    "item2": {
+      "Name": "Lisa van den Berg",
+      "Company": "Business Owner",
+      "Review": "The cleaners were professional, friendly, and very thorough. I’m impressed!"
+    },
+    "item3": {
+      "Name": "Thomas Bakker",
+      "Company": "Office Manager",
+      "Review": "They always arrive on time and leave our office spotless. Great service!"
+    },
+    "item4": {
+      "Name": "Sanne Jansen",
+      "Company": "Apartment Owner",
+      "Review": "I love that they use eco-friendly products. Safe for my kids and pets!"
+    },
+    "item5": {
+      "Name": "Daan Meijer",
+      "Company": "Apartment Owner",
+      "Review": "They pay attention to the smallest details. My home looks brand new!"
+    },
+    "item6": {
+      "Name": "Eva van Dijk",
+      "Company": "Restaurant Owner",
+      "Review": "Booking was easy, and the service was outstanding. Will hire again!"
+    }
   }
 }

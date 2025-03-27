@@ -1,13 +1,13 @@
 const brand = {
   starter: {
-    name: 'Veluxi Starter',
-    desc: 'Vue Starter Template',
-    prefix: 'veluxi',
-    footerText: 'Veluxi Theme All Rights Reserved 2021',
-    logoText: 'Veluxi Theme',
+    name: 'Bright and Fresh',
+    desc: 'Bright and Fresh offers top-quality residential and commercial cleaning services. Eco-friendly products, reliable staff, and sparkling results guaranteed',
+    prefix: 'soroushbsp',
+    footerText: 'Bright and Fresh Theme All Rights Reserved',
+    logoText: 'Bright and Fresh Theme',
     projectName: 'Starter Project',
-    url: 'veluxi.ux-maestro.com',
-    img: '/static/images/starter-logo.png',
+    url: 'https://brighfresh.com/',
+    img: '/logo-light.png',
     notifMsg:
       'Donec sit amet nulla sed arcu pulvinar ultricies commodo id ligula.',
   },

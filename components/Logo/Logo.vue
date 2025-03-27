@@ -1,26 +1,29 @@
 <template>
-  <span
-    :class="type"
-    class="logo"
-  >
-    <img :src="logo" alt="logo">
-    {{ type !== 'only' ? brand.name : '' }}
+  <span :class="type" class="logo">
+    <img
+      :src="logo"
+      alt="logo"
+      width="300"
+      height="300"
+      style="border-radius: 50%"
+    />
+    {{ type !== "only" ? brand.name : "" }}
   </span>
 </template>
 
 <style scoped lang="scss">
-@import './logo-style.scss';
+@import "./logo-style.scss";
 </style>
 
 <script>
-import logo from '@/assets/images/starter-logo.svg';
-import brand from '@/assets/text/brand';
+import logo from "@/public/logo-light.png";
+import brand from "@/assets/text/brand";
 
 export default {
   props: {
     type: {
       type: String,
-      default: 'only',
+      default: "only",
     },
   },
   data() {

@@ -1,69 +1,30 @@
 <template>
   <div class="page-section">
     <v-row>
-      <v-col
-        class="px-6"
-        sm="4"
-        cols="12"
-      >
+      <v-col class="px-6" sm="4" cols="12">
         <div class="feature-list">
-          <v-icon
-            color="primary"
-            class="icon"
-          >
-            mdi-anchor
-          </v-icon>
-          <h5 class="text-h5">
-            Lorem ipsum dolor
-          </h5>
+          <v-icon color="primary" class="icon"> mdi-recycle </v-icon>
+          <h5 class="text-h5">{{ $t("features.item1_title") }}</h5>
           <p class="text-body-1">
-            Quos blanditiis tenetur unde suscipit,
-            quam beatae rerum inventore consectetur,
-            neque doloribus.
+            {{ $t("features.item1_desc") }}
           </p>
         </div>
       </v-col>
-      <v-col
-        class="px-6"
-        sm="4"
-        cols="12"
-      >
+      <v-col class="px-6" sm="4" cols="12">
         <div class="feature-list">
-          <v-icon
-            color="primary"
-            class="icon"
-          >
-            mdi-tennis
-          </v-icon>
-          <h5 class="text-h5">
-            Lorem ipsum dolor
-          </h5>
+          <v-icon color="primary" class="icon"> mdi-tune </v-icon>
+          <h5 class="text-h5">{{ $t("features.item2_title") }}</h5>
           <p class="text-body-1">
-            Quos blanditiis tenetur unde suscipit,
-            quam beatae rerum inventore consectetur,
-            neque doloribus.
+            {{ $t("features.item2_desc") }}
           </p>
         </div>
       </v-col>
-      <v-col
-        class="px-6"
-        sm="4"
-        cols="12"
-      >
+      <v-col class="px-6" sm="4" cols="12">
         <div class="feature-list">
-          <v-icon
-            color="primary"
-            class="icon"
-          >
-            mdi-gamepad-variant
-          </v-icon>
-          <h5 class="text-h5">
-            Lorem ipsum dolor
-          </h5>
+          <v-icon color="primary" class="icon"> mdi-account-hard-hat </v-icon>
+          <h5 class="text-h5">{{ $t("features.item3_title") }}</h5>
           <p class="text-body-1">
-            Quos blanditiis tenetur unde suscipit,
-            quam beatae rerum inventore consectetur,
-            neque doloribus.
+            {{ $t("features.item3_desc") }}
           </p>
         </div>
       </v-col>
@@ -72,5 +33,5 @@
 </template>
 
 <style scoped lang="scss">
-@import './feature-styles';
+@import "./feature-styles";
 </style>

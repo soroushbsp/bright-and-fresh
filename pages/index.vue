@@ -6,10 +6,7 @@
           <animate-slider />
         </v-container>
       </section>
-      <section
-        id="feature"
-        class="space-top space-bottom"
-      >
+      <section id="feature" class="space-top space-bottom">
         <v-container>
           <feature />
         </v-container>
@@ -17,19 +14,13 @@
       <div id="counter">
         <counter dark />
       </div>
-      <div
-        id="testimonials"
-        class="space-top"
-      >
+      <div id="testimonials" class="space-top">
         <Testimonials />
       </div>
-      <div
-        id="pricing"
-        class="space-top"
-      >
+      <div id="pricing" class="space-top">
         <pricing />
       </div>
-      <div
+      <!-- <div
         id="blog"
         class="space-top space-bottom"
       >
@@ -40,7 +31,7 @@
         class="space-bottom-short"
       >
         <subscribe />
-      </div>
+      </div> -->
       <hidden point="mdDown">
         <notification />
       </hidden>
@@ -74,26 +65,26 @@
 </style>
 
 <script>
-import { onMounted } from 'vue';
-import { useI18n } from 'vue-i18n';
-import MainContainer from '@/components/MainContainer';
-import AnimateSlider from '@/components/AnimateSlider';
-import Feature from '@/components/Feature';
-import Counter from '@/components/Counter';
-import Testimonials from '@/components/Testimonials';
-import Pricing from '@/components/Pricing';
-import Blog from '@/components/Blog';
-import Subscribe from '@/components/Subscribe';
-import PageNav from '@/components/PageNav';
-import Notification from '@/components/Notification';
-import Hidden from '@/components/Hidden';
-import brand from '@/assets/text/brand';
-import { defineNuxtComponent, useRouter, useCookie } from '#app';
+import { onMounted } from "vue";
+import { useI18n } from "vue-i18n";
+import MainContainer from "@/components/MainContainer";
+import AnimateSlider from "@/components/AnimateSlider";
+import Feature from "@/components/Feature";
+import Counter from "@/components/Counter";
+import Testimonials from "@/components/Testimonials";
+import Pricing from "@/components/Pricing";
+import Blog from "@/components/Blog";
+import Subscribe from "@/components/Subscribe";
+import PageNav from "@/components/PageNav";
+import Notification from "@/components/Notification";
+import Hidden from "@/components/Hidden";
+import brand from "@/assets/text/brand";
+import { defineNuxtComponent, useRouter, useCookie } from "#app";
 
 export default defineNuxtComponent({
   components: {
     MainContainer,
-    'animate-slider': AnimateSlider,
+    "animate-slider": AnimateSlider,
     Feature,
     Counter,
     Testimonials,
@@ -106,18 +97,20 @@ export default defineNuxtComponent({
   },
   head() {
     return {
-      title: brand.starter.name + ' - Home Page',
+      title: brand.starter.name,
     };
   },
   setup() {
     // push route to the stored cookie languages only for index page
     const router = useRouter();
-    const storedLang = useCookie('i18n_redirected');
+    const storedLang = useCookie("i18n_redirected");
     const i18nLocale = useI18n();
 
-    const defaultLocale = '/' + i18nLocale.fallbackLocale.value;
+    const defaultLocale = "/" + i18nLocale.fallbackLocale.value;
     onMounted(() => {
-      const rootUrl = document.location.pathname === '/' || document.location.pathname === defaultLocale;
+      const rootUrl =
+        document.location.pathname === "/" ||
+        document.location.pathname === defaultLocale;
       if (storedLang.value && rootUrl) {
         router.push({ path: `/${storedLang.value}` });
       }

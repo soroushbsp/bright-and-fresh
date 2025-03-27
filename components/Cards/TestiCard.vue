@@ -4,14 +4,8 @@
       {{ text }}
     </p>
     <div class="name">
-      <v-avatar
-        :size="30"
-        class="avatar"
-      >
-        <img
-          :src="avatar"
-          :alt="name"
-        >
+      <v-avatar :size="30" class="avatar">
+        <v-icon icon="mdi-account"></v-icon>
       </v-avatar>
       <span class="caption">
         {{ name }}
@@ -21,7 +15,7 @@
 </template>
 
 <style scoped lang="scss">
-@import './testi-card';
+@import "./testi-card";
 </style>
 
 <script>

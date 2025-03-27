@@ -37,19 +37,15 @@
               <img
                 :src="logo"
                 alt="logo"
-                width="100"
-              >
+                width="200"
+                height="200"
+                style="border-radius: 50%"
+              />
             </nuxt-link>
           </div>
-          <div
-            v-if="isDesktop"
-            class="main-menu"
-          >
+          <div v-if="isDesktop" class="main-menu">
             <div class="scrollactive-nav">
-              <template
-                v-for="(item, index) in menuPrimary"
-                :key="index"
-              >
+              <template v-for="(item, index) in menuPrimary" :key="index">
                 <v-btn
                   v-if="!invert"
                   :href="'#' + item.link"
@@ -57,18 +53,18 @@
                   class="menu-link"
                   size="small"
                   @click="scrollToMyEl(item.name)"
-                  v-text="$t('starter.header_'+item.name)"
+                  v-text="$t('starter.header_' + item.name)"
                 />
                 <v-btn
                   v-if="invert"
                   :to="localePath('/') + '#' + item.link"
-                  v-text="$t('starter.header_'+item.name)"
+                  v-text="$t('starter.header_' + item.name)"
                 />
               </template>
             </div>
           </div>
           <nav class="user-menu">
-            <v-btn
+            <!-- <v-btn
               v-if="isDesktop"
               text
             >
@@ -76,11 +72,19 @@
             </v-btn>
             <v-btn color="primary">
               Register
-            </v-btn>
-            <v-spacer
-              v-if="isDesktop"
-              class="vertical-divider"
-            />
+            </v-btn> -->
+            <v-spacer v-if="isDesktop" class="vertical-divider" />
+            <v-btn
+              icon="mdi-whatsapp"
+              color="green-darken-1"
+              size="large"
+              :href="`https://wa.me/31612345678?text=${encodeURIComponent(
+                'Hallo! Ik heb een vraag over jullie schoonmaakdiensten.'
+              )}`"
+              text=""
+              target="_blank"
+              aria-label="WhatsApp"
+            ></v-btn>
             <setting-menu />
           </nav>
         </nav>
@@ -90,18 +94,18 @@
 </template>
 
 <style lang="scss" scoped>
-@import './header-style.scss';
+@import "./header-style.scss";
 </style>
 
 <script>
-import { inject } from 'vue';
-import { useRouter } from '#app';
-import logo from '@/assets/images/starter-logo.svg';
-import link from '@/assets/text/link';
-import Settings from './Settings';
-import MobileMenu from './MobileMenu';
-import navMenu from './menu';
-import { useLocalePath } from '#imports';
+import { inject } from "vue";
+import { useRouter } from "#app";
+import logo from "@/public/logo-light.png";
+import link from "@/assets/text/link";
+import Settings from "./Settings";
+import MobileMenu from "./MobileMenu";
+import navMenu from "./menu";
+import { useLocalePath } from "#imports";
 
 let counter = 0;
 
@@ -117,8 +121,8 @@ function createData(name, href, offset) {
 
 export default {
   components: {
-    'mobile-menu': MobileMenu,
-    'setting-menu': Settings,
+    "mobile-menu": MobileMenu,
+    "setting-menu": Settings,
   },
   props: {
     invert: {
@@ -128,7 +132,7 @@ export default {
   },
   setup() {
     const localePath = useLocalePath();
-    const smoothScroll = inject('smoothScroll');
+    const smoothScroll = inject("smoothScroll");
     function scrollToMyEl(elemId) {
       const myEl = document.getElementById(elemId);
       const router = useRouter();
@@ -143,7 +147,7 @@ export default {
 
     return {
       scrollToMyEl,
-      localePath
+      localePath,
     };
   },
   data() {
@@ -153,19 +157,19 @@ export default {
       fixed: false,
       openNavMobile: null,
       sections: {},
-      activeMenu: '',
+      activeMenu: "",
       menuPrimary: [
         createData(navMenu[0], navMenu[0]),
         createData(navMenu[1], navMenu[1]),
         createData(navMenu[2], navMenu[2]),
-        createData(navMenu[3], navMenu[3], -40),
-        createData(navMenu[4], navMenu[4], -40),
+        // createData(navMenu[3], navMenu[3], -40),
+        // createData(navMenu[4], navMenu[4], -40),
       ],
     };
   },
   computed: {
     isTablet() {
-      const mdDown = this.$vuetify.display.smAndDown;
+      const mdDown = this.$vuetify.display.mdAndDown;
       return mdDown;
     },
     isDesktop() {
@@ -175,20 +179,21 @@ export default {
   },
   mounted() {
     const id = window.location.hash;
-    const content = id.replace('#', '');
+    const content = id.replace("#", "");
     const element = document.getElementById(content);
     if (element) {
       element.scrollIntoView();
     }
 
-    const section = document.querySelectorAll('.scroll-nav-content > *');
+    const section = document.querySelectorAll(".scroll-nav-content > *");
     Array.prototype.forEach.call(section, (e) => {
       this.sections[e.id] = e.offsetTop;
     });
   },
   methods: {
     handleScroll() {
-      const scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+      const scrollPosition =
+        document.documentElement.scrollTop || document.body.scrollTop;
       const topPosition = scrollPosition + 100;
 
       Object.keys(this.sections).forEach((i) => {

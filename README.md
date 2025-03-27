@@ -1,8 +1,5 @@
-# Veluxi Starter - Vue 3 Landing Page Template
+# bright and fresh Starter - Vue 3 Landing Page Template
 ----------
-
-### Read documentation here
-https://github.com/ilhammeidi/luxivue-doc
 
 ### Template Feature
 - Modern Technologies. Built with one of most popular javascript library Vue 3, Vuetify 3 and Nuxt 3 with SSR

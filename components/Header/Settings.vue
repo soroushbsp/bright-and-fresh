@@ -14,13 +14,13 @@
         />
       </div>
     </template>
-    <v-list class="popover ocean-var">
+    <v-list class="popover ocean-var" style="margin-top: 25px">
       <div class="mode-menu">
-        <v-list-subheader>{{ $t('common.header_theme') }}</v-list-subheader>
+        <v-list-subheader>{{ $t("common.header_theme") }}</v-list-subheader>
         <v-list-item>
           <div class="flex-menu">
             <span>
-              {{ $t('common.header_light') }}
+              {{ $t("common.header_light") }}
             </span>
             <v-switch
               :model-value="isDark"
@@ -30,14 +30,14 @@
               @change="switchDark()"
             />
             <span>
-              {{ $t('common.header_dark') }}
+              {{ $t("common.header_dark") }}
             </span>
           </div>
         </v-list-item>
       </div>
       <v-divider />
       <div class="lang-menu">
-        <v-list-subheader>{{ $t('common.header_language') }}</v-list-subheader>
+        <v-list-subheader>{{ $t("common.header_language") }}</v-list-subheader>
         <v-list-item
           v-for="(lang, index) in langList"
           :key="index"
@@ -48,17 +48,14 @@
         >
           <template #prepend>
             <v-avatar class="flag">
-              <i :class="lang.code" />
+              <img :src="`/${lang.code}.png`" width="40" height="40" />
             </v-avatar>
           </template>
           <v-list-item-title class="lang-opt">
-            {{ $t('common.'+lang.code) }}
+            {{ $t("common." + lang.code) }}
           </v-list-item-title>
           <template #append>
-            <v-icon
-              v-if="lang.code === curLang"
-              color="primary"
-            >
+            <v-icon v-if="lang.code === curLang" color="primary">
               mdi-check
             </v-icon>
           </template>
@@ -69,14 +66,14 @@
 </template>
 
 <style lang="scss" scoped>
-@import './header-style.scss';
+@import "./header-style.scss";
 </style>
 
 <script>
-import { ref, onMounted } from 'vue';
-import { useI18n } from 'vue-i18n';
-import { useSwitchLocalePath } from 'vue-i18n-routing';
-import { toggleDark, setRtl } from '@/composables/uiTheme';
+import { ref, onMounted } from "vue";
+import { useI18n } from "vue-i18n";
+import { useSwitchLocalePath } from "vue-i18n-routing";
+import { toggleDark, setRtl } from "@/composables/uiTheme";
 
 export default {
   props: {
@@ -95,7 +92,7 @@ export default {
 
     onMounted(() => {
       isLoaded.value = true;
-      isDark.value = localStorage.getItem('luxiDarkMode') === 'dark';
+      isDark.value = localStorage.getItem("luxiDarkMode") === "dark";
     });
 
     function switchDark() {
@@ -106,14 +103,14 @@ export default {
     function switchLang(locale) {
       // i18n.setLocale(locale);
       // Set RTL and Document attr
-      document.documentElement.setAttribute('lang', locale);
+      document.documentElement.setAttribute("lang", locale);
 
-      if (locale === 'ar') {
+      if (locale === "ar") {
         setRtl(true);
-        document.documentElement.setAttribute('dir', 'rtl');
+        document.documentElement.setAttribute("dir", "rtl");
       } else {
         setRtl(false);
-        document.documentElement.setAttribute('dir', 'ltr');
+        document.documentElement.setAttribute("dir", "ltr");
       }
     }
 

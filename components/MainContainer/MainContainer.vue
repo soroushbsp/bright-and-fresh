@@ -1,5 +1,5 @@
 <template>
-  <div class="main-wrap">
+  <div class="main-wrap" style="overflow-x: hidden;">
     <main-header :invert="invert"/>
     <div class="container-wrap" :class="{ 'scroll-nav-content' : navScroll }">
       <slot />
