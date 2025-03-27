@@ -112,7 +112,12 @@ export default defineNuxtConfig({
     "@/assets/scss/vendors/animate-extends.css",
     "@/assets/scss/vendors/hamburger-menu.css",
   ],
-  modules: ["@nuxtjs/i18n", "vite-plugin-eslint", "@vite-pwa/nuxt","@nuxtjs/sitemap"],
+  modules: [
+    "@nuxtjs/i18n",
+    "vite-plugin-eslint",
+    "@vite-pwa/nuxt",
+    "@nuxtjs/sitemap",
+  ],
   pwa: {
     registerType: "autoUpdate",
     manifest: {
@@ -187,6 +192,10 @@ export default defineNuxtConfig({
   robots: {
     UserAgent: "*",
     Allow: "/",
+  },
+  server: {
+    port: 3000,
+    host: "0.0.0.0", // Ensure it's accessible globally
   },
   devServer: {
     port: 8000,
