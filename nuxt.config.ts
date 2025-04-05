@@ -18,6 +18,10 @@ export default defineNuxtConfig({
         },
         // Local business meta
         { name: "geo.placename", content: "Amsterdam" },
+        {
+          name: "google-site-verification",
+          content: "7pWJXpxYqVyo15xYK6rBDzS845_752dEms4JFWb2Bs4",
+        },
         { name: "geo.region", content: "NL-NH" },
         { name: "msapplication-TileColor", content: "#FFFFFF" },
         { name: "msapplication-TileImage", content: "/new-logo.jpeg" },
