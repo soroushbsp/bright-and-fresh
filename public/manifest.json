@@ -1,61 +1,61 @@
 {
-  "name": "Bright and Fresh",
+  "name": "Bright & Fresh",
   "short_name": "Bright&Fresh",
-  "description": "Bright and Fresh Cleaning Services",
+  "description": "Bright & Fresh Cleaning Services",
   "dir": "ltr",
   "orientation": "any",
   "prefer_related_applications": true,
   "icons": [
     {
-      "src": "/logo-light.png",
+      "src": "/new-logo.jpeg",
       "types": "img/png",
       "sizes": "512x512",
       "purpose": "maskable"
     },
     {
-      "src": "/logo-light.png",
+      "src": "/new-logo.jpeg",
       "types": "img/png",
       "sizes": "384x384",
       "purpose": "maskable"
     },
     {
-      "src": "/logo-light.png",
+      "src": "/new-logo.jpeg",
       "types": "img/png",
       "sizes": "192x192",
       "purpose": "maskable"
     },
     {
-      "src": "/logo-light.png",
+      "src": "/new-logo.jpeg",
       "types": "img/png",
       "sizes": "128x128",
       "purpose": "maskable"
     },
     {
-      "src": "/logo-light.png",
+      "src": "/new-logo.jpeg",
       "types": "img/png",
       "sizes": "96x96",
       "purpose": "maskable"
     },
     {
-      "src": "/logo-light.png",
+      "src": "/new-logo.jpeg",
       "types": "img/png",
       "sizes": "72x72",
       "purpose": "maskable"
     },
     {
-      "src": "/logo-light.png",
+      "src": "/new-logo.jpeg",
       "types": "img/png",
       "sizes": "48x48",
       "purpose": "any"
     },
     {
-      "src": "/logo-light.png",
+      "src": "/new-logo.jpeg",
       "types": "img/png",
       "sizes": "180x180",
       "purpose": "any"
     },
     {
-      "src": "/logo-light.png",
+      "src": "/new-logo.jpeg",
       "types": "img/png",
       "sizes": "120x120",
       "purpose": "any"

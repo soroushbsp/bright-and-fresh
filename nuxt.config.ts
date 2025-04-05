@@ -7,20 +7,20 @@ export default defineNuxtConfig({
   app: {
     pageTransition: { name: "page", mode: "out-in" },
     head: {
-      title: "Bright and Fresh | Professional Cleaning Services",
+      title: "Bright & Fresh | Professional Cleaning Services",
       meta: [
         { charset: "utf-8" },
         { name: "viewport", content: "width=device-width, initial-scale=1" },
         {
           name: "description",
           content:
-            "Bright and Fresh - Professionele schoonmaakdiensten in heel Nederland. Eco-vriendelijk, betaalbaar en betrouwbaar.",
+            "Bright & Fresh - Professionele schoonmaakdiensten in heel Nederland. Eco-vriendelijk, betaalbaar en betrouwbaar.",
         },
         // Local business meta
         { name: "geo.placename", content: "Amsterdam" },
         { name: "geo.region", content: "NL-NH" },
         { name: "msapplication-TileColor", content: "#FFFFFF" },
-        { name: "msapplication-TileImage", content: "/logo-light.png" },
+        { name: "msapplication-TileImage", content: "/new-logo.jpeg" },
         // PWA primary color
         { name: "theme-color", content: theme.primary },
         // Facebook
@@ -33,7 +33,7 @@ export default defineNuxtConfig({
         { property: "twitter:domain", content: "https://brighfresh.com/" },
         { property: "twitter:creator", content: "brighfresh" },
         { property: "twitter:card", content: "summary" },
-        { property: "twitter:image:src", content: "/logo-light.png" },
+        { property: "twitter:image:src", content: "/new-logo.jpeg" },
         { property: "og:url", content: brand.starter.url },
         { property: "og:title", content: brand.starter.projectName },
         { property: "og:description", content: brand.starter.desc },
@@ -46,39 +46,39 @@ export default defineNuxtConfig({
       ],
       link: [
         // Favicon
-        { rel: "shortcut icon", href: "/logo-light.png" },
-        { rel: "apple-touch-icon", sizes: "57x57", href: "/logo-light.png" },
-        { rel: "apple-touch-icon", sizes: "60x60", href: "/logo-light.png" },
-        { rel: "apple-touch-icon", sizes: "72x72", href: "/logo-light.png" },
-        { rel: "apple-touch-icon", sizes: "76x76", href: "/logo-light.png" },
-        { rel: "apple-touch-icon", sizes: "114x114", href: "/logo-light.png" },
-        { rel: "apple-touch-icon", sizes: "120x120", href: "/logo-light.png" },
-        { rel: "apple-touch-icon", sizes: "144x144", href: "/logo-light.png" },
-        { rel: "apple-touch-icon", sizes: "152x152", href: "/logo-light.png" },
-        { rel: "apple-touch-icon", sizes: "180x180", href: "/logo-light.png" },
+        { rel: "shortcut icon", href: "/new-logo.jpeg" },
+        { rel: "apple-touch-icon", sizes: "57x57", href: "/new-logo.jpeg" },
+        { rel: "apple-touch-icon", sizes: "60x60", href: "/new-logo.jpeg" },
+        { rel: "apple-touch-icon", sizes: "72x72", href: "/new-logo.jpeg" },
+        { rel: "apple-touch-icon", sizes: "76x76", href: "/new-logo.jpeg" },
+        { rel: "apple-touch-icon", sizes: "114x114", href: "/new-logo.jpeg" },
+        { rel: "apple-touch-icon", sizes: "120x120", href: "/new-logo.jpeg" },
+        { rel: "apple-touch-icon", sizes: "144x144", href: "/new-logo.jpeg" },
+        { rel: "apple-touch-icon", sizes: "152x152", href: "/new-logo.jpeg" },
+        { rel: "apple-touch-icon", sizes: "180x180", href: "/new-logo.jpeg" },
         {
           rel: "icon",
           type: "image/png",
           sizes: "192x192",
-          href: "/logo-light.png",
+          href: "/new-logo.jpeg",
         },
         {
           rel: "icon",
           type: "image/png",
           sizes: "32x32",
-          href: "/logo-light.png",
+          href: "/new-logo.jpeg",
         },
         {
           rel: "icon",
           type: "image/png",
           sizes: "96x96",
-          href: "/logo-light.png",
+          href: "/new-logo.jpeg",
         },
         {
           rel: "icon",
           type: "image/png",
           sizes: "16x16",
-          href: "/logo-light.png",
+          href: "/new-logo.jpeg",
         },
         { rel: "manifest", href: "/manifest.json" },
         // Fonts and Icons
@@ -121,7 +121,7 @@ export default defineNuxtConfig({
   pwa: {
     registerType: "autoUpdate",
     manifest: {
-      name: "Bright and Fresh Cleaning Services",
+      name: "Bright & Fresh Cleaning Services",
       short_name: "Bright&Fresh",
       description: "Professional cleaning services for homes and offices",
       theme_color: "#009688",
@@ -130,18 +130,18 @@ export default defineNuxtConfig({
       start_url: "/",
       icons: [
         {
-          src: "/logo-light.png",
+          src: "/new-logo.jpeg",
           sizes: "72x72",
           type: "image/png",
         },
         {
-          src: "/logo-light.png",
+          src: "/new-logo.jpeg",
           sizes: "192x192",
           type: "image/png",
           purpose: "any maskable",
         },
         {
-          src: "/logo-light.png",
+          src: "/new-logo.jpeg",
           sizes: "512x512",
           type: "image/png",
         },

@@ -1,4 +1,4 @@
-# bright and fresh Starter - Vue 3 Landing Page Template
+# Bright & Fresh Starter - Vue 3 Landing Page Template
 ----------
 
 ### Template Feature

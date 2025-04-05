@@ -4,14 +4,14 @@
       <v-row>
         <!-- Info Column -->
         <v-col cols="12" md="6" class="text-white">
-          <h3 class="text-h5 font-weight-bold mb-4">Bright and Fresh</h3>
+          <h3 class="text-h5 font-weight-bold mb-4">Bright & Fresh</h3>
           <p class="mb-2">
             <v-icon icon="mdi-email" class="mr-2"></v-icon>
-            info@brightandfresh.nl
+            <a href="mailto:brightfresh08@gmail.com" style="text-decoration: none; color: white;"> brightfresh08@gmail.com</a>
           </p>
           <p class="mb-2">
             <v-icon icon="mdi-phone" class="mr-2"></v-icon>
-            +31 6 1234 5678
+            <a href="tel:+31684916761" style="text-decoration: none; color: white;"> +31684916761 </a>
           </p>
           <p class="mb-4">
             <v-icon icon="mdi-clock" class="mr-2"></v-icon>
@@ -23,21 +23,21 @@
               icon="mdi-facebook"
               variant="text"
               color="white"
-              href="https://facebook.com/brightandfresh"
+              href="https://facebook.com/bright&fresh"
               target="_blank"
             ></v-btn>
             <v-btn
               icon="mdi-instagram"
               variant="text"
               color="white"
-              href="https://instagram.com/brightandfresh"
+              href="https://instagram.com/bright&fresh"
               target="_blank"
             ></v-btn>
             <v-btn
               icon="mdi-whatsapp"
               variant="text"
               color="white"
-              href="https://wa.me/31612345678"
+              href="https://wa.me/+31684916761"
               target="_blank"
             ></v-btn>
           </div>

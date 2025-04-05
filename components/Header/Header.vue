@@ -42,7 +42,7 @@
                 style="border-radius: 50%"
               />
               <span style="margin: 2px 3px 0px; font-size: 16px; font-weight: 700; color: #009688 !important;">
-                Bright and Fresh
+                Bright & Fresh
               </span>
             </nuxt-link>
           </div>
@@ -82,7 +82,7 @@
               icon="mdi-whatsapp"
               color="green-darken-1"
               size="large"
-              :href="`https://wa.me/31612345678?text=${encodeURIComponent(
+              :href="`https://wa.me/+31684916761?text=${encodeURIComponent(
                 'Hallo! Ik heb een vraag over jullie schoonmaakdiensten.'
               )}`"
               text=""
@@ -104,7 +104,7 @@
 <script>
 import { inject } from "vue";
 import { useRouter } from "#app";
-import logo from "@/public/logo-light.png";
+import logo from "@/public/new-logo.jpeg";
 import link from "@/assets/text/link";
 import Settings from "./Settings";
 import MobileMenu from "./MobileMenu";
