@@ -20,7 +20,7 @@ export default defineNuxtConfig({
         { name: "geo.placename", content: "Amsterdam" },
         {
           name: "google-site-verification",
-          content: "7pWJXpxYqVyo15xYK6rBDzS845_752dEms4JFWb2Bs4",
+          content: "kRSvM5nJstrL2bubbDxWw_8j7BgrQySgdHcb8qA04Vc",
         },
         { name: "geo.region", content: "NL-NH" },
         { name: "msapplication-TileColor", content: "#FFFFFF" },
