@@ -82,7 +82,7 @@
               icon="mdi-whatsapp"
               color="green-darken-1"
               size="large"
-              :href="`https://wa.me/+31684916761?text=${encodeURIComponent(
+              :href="`https://wa.me/+31684646764?text=${encodeURIComponent(
                 'Hallo! Ik heb een vraag over jullie schoonmaakdiensten.'
               )}`"
               text=""

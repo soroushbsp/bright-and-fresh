@@ -11,7 +11,7 @@
           </p>
           <p class="mb-2">
             <v-icon icon="mdi-phone" class="mr-2"></v-icon>
-            <a href="tel:+31684916761" style="text-decoration: none; color: white;"> +31684916761 </a>
+            <a href="tel:+31684646764" style="text-decoration: none; color: white;"> +31684646764 </a>
           </p>
           <p class="mb-4">
             <v-icon icon="mdi-clock" class="mr-2"></v-icon>
@@ -37,7 +37,7 @@
               icon="mdi-whatsapp"
               variant="text"
               color="white"
-              href="https://wa.me/+31684916761"
+              href="https://wa.me/+31684646764"
               target="_blank"
             ></v-btn>
           </div>
