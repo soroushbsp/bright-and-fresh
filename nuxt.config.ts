@@ -121,6 +121,7 @@ export default defineNuxtConfig({
     "vite-plugin-eslint",
     "@vite-pwa/nuxt",
     "@nuxtjs/sitemap",
+    "@nuxtjs/robots",
   ],
   pwa: {
     registerType: "autoUpdate",
@@ -191,11 +192,13 @@ export default defineNuxtConfig({
   },
   sitemap: {
     hostname: "https://brighfresh.com/",
+    trailingSlash: true,
   },
   // Robots.txt
   robots: {
     UserAgent: "*",
     Allow: "/",
+    Sitemap: "https://brighfresh.com/sitemap.xml",
   },
   server: {
     port: 3000,
