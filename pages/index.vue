@@ -105,15 +105,14 @@ export default defineNuxtComponent({
     const router = useRouter();
     const storedLang = useCookie("i18n_redirected");
     const i18nLocale = useI18n();
-
-    const defaultLocale = "/" + i18nLocale.fallbackLocale.value;
+    // const defaultLocale = "/" + i18nLocale.fallbackLocale.value;
     onMounted(() => {
-      const rootUrl =
-        document.location.pathname === "/" ||
-        document.location.pathname === defaultLocale;
-      if (storedLang.value && rootUrl) {
-        router.push({ path: `/${storedLang.value}` });
-      }
+      // const rootUrl =
+      //   document.location.pathname === "/" ||
+      //   document.location.pathname === defaultLocale;
+      // if (storedLang.value && rootUrl) {
+      //   router.push({ path: `/${storedLang.value}` });
+      // }
       window.addEventListener("load", () => {
         if (!("serviceWorker" in navigator)) {
           throw new Error("serviceWorker is not supported in current browser!");

@@ -21,7 +21,6 @@
   },
   "dependencies": {
     "@mdi/font": "^7.0.96",
-    "@nuxtjs/sitemap": "^7.2.9",
     "@splidejs/vue-splide": "^0.6.12",
     "@vite-pwa/nuxt": "^0.10.6",
     "rtl-sass": "^1.5.0",

@@ -41,8 +41,6 @@
         <v-list-item
           v-for="(lang, index) in langList"
           :key="index"
-          :value="lang.code"
-          :to="switchLocalePath(lang.code)"
           @click="switchLang(lang.code)"
           nuxt
         >
@@ -55,7 +53,7 @@
             {{ $t("common." + lang.code) }}
           </v-list-item-title>
           <template #append>
-            <v-icon v-if="lang.code === curLang" color="primary">
+            <v-icon v-if="lang.code === i18n.locale.value" color="primary">
               mdi-check
             </v-icon>
           </template>
@@ -74,6 +72,7 @@ import { ref, onMounted } from "vue";
 import { useI18n } from "vue-i18n";
 import { useSwitchLocalePath } from "vue-i18n-routing";
 import { toggleDark, setRtl } from "@/composables/uiTheme";
+import i18n from "~/config/i18n";
 
 export default {
   props: {
@@ -86,7 +85,6 @@ export default {
     const isDark = ref(false);
     const i18n = useI18n();
     const isLoaded = ref(false);
-    const curLang = i18n.locale.value;
 
     const switchLocalePath = useSwitchLocalePath();
 
@@ -101,6 +99,9 @@ export default {
     }
 
     function switchLang(locale) {
+      i18n.setLocale(locale)
+      i18n.setLocaleCookie(locale)
+      // This will also update the cookie
       // i18n.setLocale(locale);
       // Set RTL and Document attr
       document.documentElement.setAttribute("lang", locale);
@@ -117,9 +118,9 @@ export default {
     return {
       isLoaded,
       isDark,
-      curLang,
       switchDark,
       switchLang,
+      i18n,
       switchLocalePath,
     };
   },

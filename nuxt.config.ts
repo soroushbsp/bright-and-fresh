@@ -116,12 +116,7 @@ export default defineNuxtConfig({
     "@/assets/scss/vendors/animate-extends.css",
     "@/assets/scss/vendors/hamburger-menu.css",
   ],
-  modules: [
-    "@nuxtjs/i18n",
-    "vite-plugin-eslint",
-    "@vite-pwa/nuxt",
-    "@nuxtjs/sitemap",
-  ],
+  modules: ["@nuxtjs/i18n", "vite-plugin-eslint", "@vite-pwa/nuxt"],
   pwa: {
     registerType: "autoUpdate",
     manifest: {
@@ -165,13 +160,14 @@ export default defineNuxtConfig({
     lazy: true,
     langDir: "lang",
     defaultLocale: "nl",
-    strategy: "prefix",
+    strategy: "no_prefix",
     detectBrowserLanguage: {
       useCookie: true,
       cookieKey: "i18n_redirected",
-      redirectOn: "root", // recommended
+      redirectOn: "root", // okay to keep
+      alwaysRedirect: false, // ⬅️ important to avoid force redirect on sitemap and other non-html routes
     },
-    vueI18n: "./config/i18n.js", // use this options for next vueI18n version
+    vueI18n: "./config/i18n.js",
   },
   vite: {
     css: {
@@ -188,14 +184,6 @@ export default defineNuxtConfig({
     extend(config) {
       config.performance.hints = false;
     },
-  },
-  sitemap: {
-    hostname: "https://brighfresh.com/",
-  },
-  // Robots.txt
-  robots: {
-    UserAgent: "*",
-    Allow: "/",
   },
   server: {
     port: 3000,
