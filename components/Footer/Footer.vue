@@ -19,18 +19,18 @@
           </p>
 
           <div class="social-icons">
-            <v-btn
+            <!-- <v-btn
               icon="mdi-facebook"
               variant="text"
               color="white"
               href="https://facebook.com/bright&fresh"
               target="_blank"
-            ></v-btn>
+            ></v-btn> -->
             <v-btn
               icon="mdi-instagram"
               variant="text"
               color="white"
-              href="https://instagram.com/bright&fresh"
+              href="https://instagram.com/brighfresh_cleaning"
               target="_blank"
             ></v-btn>
             <v-btn
