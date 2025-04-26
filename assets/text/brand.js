@@ -7,7 +7,7 @@ const brand = {
     logoText: 'Bright & Fresh Theme',
     projectName: 'Starter Project',
     url: 'https://brighfresh.com/',
-    img: '/new-logo.jpeg',
+    img: '/new-logo.png',
     notifMsg:
       'Donec sit amet nulla sed arcu pulvinar ultricies commodo id ligula.',
   },

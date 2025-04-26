@@ -16,7 +16,7 @@
 </style>
 
 <script>
-import logo from "@/public/new-logo.jpeg";
+import logo from "@/public/new-logo.png";
 import brand from "@/assets/text/brand";
 
 export default {

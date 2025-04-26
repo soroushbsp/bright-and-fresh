@@ -104,7 +104,7 @@
 <script>
 import { inject } from "vue";
 import { useRouter } from "#app";
-import logo from "@/public/new-logo.jpeg";
+import logo from "@/public/new-logo.png";
 import link from "@/assets/text/link";
 import Settings from "./Settings";
 import MobileMenu from "./MobileMenu";

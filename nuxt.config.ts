@@ -12,19 +12,26 @@ export default defineNuxtConfig({
         { charset: "utf-8" },
         { name: "viewport", content: "width=device-width, initial-scale=1" },
         {
+          hid: "description",
           name: "description",
           content:
-            "Bright & Fresh - Professionele schoonmaakdiensten in heel Nederland. Eco-vriendelijk, betaalbaar en betrouwbaar.",
+            "BrighFresh schoonmaakbedrijf in Werkendam. Professionele schoonmaakdiensten voor bedrijven en particulieren.",
+        },
+        {
+          hid: "keywords",
+          name: "keywords",
+          content:
+            "schoonmaakbedrijf Werkendam, schoonmaakbedrijf Gorinchem, schoonmaakbedrijf Sliedrecht, schoonmaakbedrijf Dordrecht",
         },
         // Local business meta
-        { name: "geo.placename", content: "Amsterdam" },
+        { name: "geo.placename", content: "Werkendam" },
         {
           name: "google-site-verification",
           content: "kRSvM5nJstrL2bubbDxWw_8j7BgrQySgdHcb8qA04Vc",
         },
         { name: "geo.region", content: "NL-NH" },
         { name: "msapplication-TileColor", content: "#FFFFFF" },
-        { name: "msapplication-TileImage", content: "/new-logo.jpeg" },
+        { name: "msapplication-TileImage", content: "/new-logo.png" },
         // PWA primary color
         { name: "theme-color", content: theme.primary },
         // Facebook
@@ -37,7 +44,7 @@ export default defineNuxtConfig({
         { property: "twitter:domain", content: "https://brighfresh.com/" },
         { property: "twitter:creator", content: "brighfresh" },
         { property: "twitter:card", content: "summary" },
-        { property: "twitter:image:src", content: "/new-logo.jpeg" },
+        { property: "twitter:image:src", content: "/new-logo.png" },
         { property: "og:url", content: brand.starter.url },
         { property: "og:title", content: brand.starter.projectName },
         { property: "og:description", content: brand.starter.desc },
@@ -50,39 +57,39 @@ export default defineNuxtConfig({
       ],
       link: [
         // Favicon
-        { rel: "shortcut icon", href: "/new-logo.jpeg" },
-        { rel: "apple-touch-icon", sizes: "57x57", href: "/new-logo.jpeg" },
-        { rel: "apple-touch-icon", sizes: "60x60", href: "/new-logo.jpeg" },
-        { rel: "apple-touch-icon", sizes: "72x72", href: "/new-logo.jpeg" },
-        { rel: "apple-touch-icon", sizes: "76x76", href: "/new-logo.jpeg" },
-        { rel: "apple-touch-icon", sizes: "114x114", href: "/new-logo.jpeg" },
-        { rel: "apple-touch-icon", sizes: "120x120", href: "/new-logo.jpeg" },
-        { rel: "apple-touch-icon", sizes: "144x144", href: "/new-logo.jpeg" },
-        { rel: "apple-touch-icon", sizes: "152x152", href: "/new-logo.jpeg" },
-        { rel: "apple-touch-icon", sizes: "180x180", href: "/new-logo.jpeg" },
+        { rel: "shortcut icon", href: "/new-logo.png" },
+        { rel: "apple-touch-icon", sizes: "57x57", href: "/new-logo.png" },
+        { rel: "apple-touch-icon", sizes: "60x60", href: "/new-logo.png" },
+        { rel: "apple-touch-icon", sizes: "72x72", href: "/new-logo.png" },
+        { rel: "apple-touch-icon", sizes: "76x76", href: "/new-logo.png" },
+        { rel: "apple-touch-icon", sizes: "114x114", href: "/new-logo.png" },
+        { rel: "apple-touch-icon", sizes: "120x120", href: "/new-logo.png" },
+        { rel: "apple-touch-icon", sizes: "144x144", href: "/new-logo.png" },
+        { rel: "apple-touch-icon", sizes: "152x152", href: "/new-logo.png" },
+        { rel: "apple-touch-icon", sizes: "180x180", href: "/new-logo.png" },
         {
           rel: "icon",
           type: "image/png",
           sizes: "192x192",
-          href: "/new-logo.jpeg",
+          href: "/new-logo.png",
         },
         {
           rel: "icon",
           type: "image/png",
           sizes: "32x32",
-          href: "/new-logo.jpeg",
+          href: "/new-logo.png",
         },
         {
           rel: "icon",
           type: "image/png",
           sizes: "96x96",
-          href: "/new-logo.jpeg",
+          href: "/new-logo.png",
         },
         {
           rel: "icon",
           type: "image/png",
           sizes: "16x16",
-          href: "/new-logo.jpeg",
+          href: "/new-logo.png",
         },
         { rel: "manifest", href: "/manifest.json" },
         // Fonts and Icons
@@ -129,18 +136,18 @@ export default defineNuxtConfig({
       start_url: "/",
       icons: [
         {
-          src: "/new-logo.jpeg",
+          src: "/new-logo.png",
           sizes: "72x72",
           type: "image/png",
         },
         {
-          src: "/new-logo.jpeg",
+          src: "/new-logo.png",
           sizes: "192x192",
           type: "image/png",
           purpose: "any maskable",
         },
         {
-          src: "/new-logo.jpeg",
+          src: "/new-logo.png",
           sizes: "512x512",
           type: "image/png",
         },
