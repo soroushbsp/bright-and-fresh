@@ -15,13 +15,13 @@ export default defineNuxtConfig({
           hid: "description",
           name: "description",
           content:
-            "BrighFresh schoonmaakbedrijf in Werkendam. Professionele schoonmaakdiensten voor bedrijven en particulieren.",
+            "BrighFresh is uw professionele schoonmaakbedrijf in Woudrichem, Sleeuwijk, Almkerk, Nieuwendijk, Dussen, Veen, Genderen en Wijk en Aalburg. Wij bieden kantoorschoonmaak, woning schoonmaak, gevelreiniging, vloeronderhoud en glasbewassing met 100% tevredenheidsgarantie. Vraag vandaag nog een gratis offerte aan!",
         },
         {
           hid: "keywords",
           name: "keywords",
           content:
-            "schoonmaakbedrijf Werkendam, schoonmaakbedrijf Gorinchem, schoonmaakbedrijf Sliedrecht, schoonmaakbedrijf Dordrecht",
+            "schoonmaakbedrijf Woudrichem , schoonmaakbedrijf Sleeuwijk , schoonmaakbedrijf Almkerk , schoonmaakbedrijf Nieuwendijk , schoonmaakbedrijf Dussen , schoonmaakbedrijf Veen , schoonmaakbedrijf Genderen , schoonmaakbedrijf Wijk en Aalburg , schoonmaakdiensten , professionele schoonmaak,kantoorschoonmaak,woning schoonmaak,bedrijfs schoonmaakbedrijf,gevelreiniging,vloeronderhoud,glasbewassing,dieptereiniging,periodieke schoonmaak,schoonmaak op maat,interieur schoonmaak,schoonmaakservice Nederland,schoonmaak offerte,schoonmaak aannemer,reinigingsdienst,thuis schoonmaakdienst,schoonmaak en onderhoud",
         },
         // Local business meta
         { name: "geo.placename", content: "Werkendam" },
