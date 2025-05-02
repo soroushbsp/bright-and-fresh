@@ -7,11 +7,21 @@
           <h3 class="text-h5 font-weight-bold mb-4">Bright & Fresh</h3>
           <p class="mb-2">
             <v-icon icon="mdi-email" class="mr-2"></v-icon>
-            <a href="mailto:brightfresh08@gmail.com" style="text-decoration: none; color: white;"> brightfresh08@gmail.com</a>
+            <a
+              href="mailto:brightfresh08@gmail.com"
+              style="text-decoration: none; color: white"
+            >
+              brightfresh08@gmail.com</a
+            >
           </p>
           <p class="mb-2">
             <v-icon icon="mdi-phone" class="mr-2"></v-icon>
-            <a href="tel:+31684646764" style="text-decoration: none; color: white;"> +31684646764 </a>
+            <a
+              href="tel:+31684646764"
+              style="text-decoration: none; color: white"
+            >
+              +31684646764
+            </a>
           </p>
           <p class="mb-4">
             <v-icon icon="mdi-clock" class="mr-2"></v-icon>
@@ -47,19 +57,17 @@
         <v-col cols="12" md="6">
           <div class="map-container">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2436.476961783372!2d4.894502315801661!3d52.37021597978625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTLCsDIyJzEyLjgiTiA0wrA1My'0OC4xIkU!5e0!3m2!1sen!2snl!4v1620000000000!5m2!1sen!2snl"
-              width="100%"
-              height="250"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d79002.74622582295!2d4.8073511!3d51.77260855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c682dc4d49ddab%3A0x4ed1f840c89b7bf1!2z2YjYsdqp2YbigIzYr9in2YXYjCDZh9mE2YbYrw!5e0!3m2!1sfa!2sfr!4v1746151894098!5m2!1sfa!2sfr"
+              width="600"
+              height="450"
               style="border: 0"
-              allowfullscreen
+              allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
-              aria-label="Onze locatie in Amsterdam"
             ></iframe>
-
             <div class="mt-4 text-white">
               <v-icon icon="mdi-map-marker" class="mr-2"></v-icon>
-              <span>Keizersgracht 123, 1015 CJ Amsterdam</span>
+              <span>Shans 24 a, 4151 PW Werkendam</span>
             </div>
           </div>
         </v-col>
